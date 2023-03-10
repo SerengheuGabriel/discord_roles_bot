@@ -89,7 +89,7 @@ async def on_message(message):
 
 
 class MyView(discord.ui.View): # Create a class called MyView that subclasses discord.ui.View
-    @discord.ui.button(label="1. HOTS", style=discord.ButtonStyle.primary, row=0, emoji="😎") # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="1. HOTS", style=discord.ButtonStyle.secondary, row=0, emoji="🛡️")
     async def hots_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -108,8 +108,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "Definitely NOT League of Legends (Heroes of the Storm) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="2. Zomboid", row=0, style=discord.ButtonStyle.primary,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="2. Zomboid", row=0, style=discord.ButtonStyle.secondary,
+                       emoji="🧟")
     async def zomboid_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -128,8 +128,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = " Early Access Zombie Survival Gamers (Project: Zomboid) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="3. BLOONS 6", row=0, style=discord.ButtonStyle.primary,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="3. BLOONS 6", row=0, style=discord.ButtonStyle.secondary,
+                       emoji="🎈")
     async def bloons_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -148,8 +148,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = " Sniper Monkeys (BLOONS 6) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="4. PULSAR", row=0, style=discord.ButtonStyle.primary,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="4. PULSAR", row=0, style=discord.ButtonStyle.secondary,
+                       emoji="🚀")
     async def pulsar_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -168,8 +168,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "Space Pirates (PULSAR: Lost Colony) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="5. ROR 2", row=0, style=discord.ButtonStyle.primary,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="5. ROR 2", row=0, style=discord.ButtonStyle.secondary,
+                       emoji="☔")
     async def ror2_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -188,8 +188,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "101% crit chance (Risk of Rain 2) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="6. Tabletop Sim", row=1, style=discord.ButtonStyle.success,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="6. Tabletop Sim", row=1, style=discord.ButtonStyle.secondary,
+                       emoji="♟️")
     async def tabletop_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -208,8 +208,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "(╯°□°）╯︵ ┻━┻ Simulator (Tabletop Simulator) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="7. Sea of Thieves", row=1, style=discord.ButtonStyle.success,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="7. Sea of Thieves", row=1, style=discord.ButtonStyle.secondary,
+                       emoji="🏴‍☠️")
     async def sea_of_thieves_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -228,8 +228,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "Lovers of Booty (Sea of Thieves) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="8. Minecraft", row=1, style=discord.ButtonStyle.success,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="8. Minecraft", row=1, style=discord.ButtonStyle.secondary,
+                       emoji="🧊")
     async def mc_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -248,8 +248,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "Blockheads (Minecraft) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="9. Overcooked", row=1, style=discord.ButtonStyle.success,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="9. Overcooked", row=1, style=discord.ButtonStyle.secondary,
+                       emoji="🥘")
     async def overcooked_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -268,8 +268,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "Hell's Kitchen Enjoyers (Overcooked 1 or 2) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="10. The Forest", row=2, style=discord.ButtonStyle.danger,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="10. The Forest", row=2, style=discord.ButtonStyle.secondary,
+                       emoji="🌲")
     async def forest_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -282,14 +282,14 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
 
         if rolesArr[9] in interaction.user.roles:
             await interaction.user.remove_roles(rolesArr[9])
-            response = "Canibalistic Woodcutters (The Forest) role has been toggled off"
+            response = "Cannibalistic Woodcutters (The Forest) role has been toggled off"
         else:
             await interaction.user.add_roles(rolesArr[9])
-            response = "Canibalistic Woodcutters (The Forest) role has been toggled on"
+            response = "Cannibalistic Woodcutters (The Forest) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="11. Hunt Showdown", row=2, style=discord.ButtonStyle.danger,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="11. Hunt Showdown", row=2, style=discord.ButtonStyle.secondary,
+                       emoji="🔫")
     async def hunt_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -308,8 +308,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "Crippled Hunters (Hunt: Showdown) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="12. Dead by Daylight", row=2, style=discord.ButtonStyle.danger,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="12. Dead by Daylight", row=2, style=discord.ButtonStyle.secondary,
+                       emoji="🔪")
     async def dbd_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -328,8 +328,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "Shirtless Myres Enjoyers (Dead by Daylight) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="13. Overwatch", row=2, style=discord.ButtonStyle.danger,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="13. Overwatch", row=2, style=discord.ButtonStyle.secondary,
+                       emoji="🦍")
     async def overwatch_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
@@ -348,8 +348,8 @@ class MyView(discord.ui.View): # Create a class called MyView that subclasses di
             response = "OWO-2 (Overwatch) role has been toggled on"
         await interaction.response.send_message(response, ephemeral=True)
 
-    @discord.ui.button(label="14. Barotrauma", row=2, style=discord.ButtonStyle.danger,
-                       emoji="😎")  # Create a button with the label "😎 Click me!" with color Blurple
+    @discord.ui.button(label="14. Barotrauma", row=2, style=discord.ButtonStyle.secondary,
+                       emoji="🌊")
     async def barotrauma_button_callback(self, interaction, button):
 
         guild = bot.get_guild(1037855624278577225)
