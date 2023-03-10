@@ -81,12 +81,6 @@ async def on_message(message):
                f"Fuck you."
     await message.channel.send(response)
 
-@bot.command(name="benta")
-async def on_message(message):
-
-    response = f"https://tenor.com/view/i-show-speed-speed-shake-now-suck-that-sucking-gif-24039341"
-    await message.channel.send(response)
-
 
 class MyView(discord.ui.View): # Create a class called MyView that subclasses discord.ui.View
     @discord.ui.button(label="1. HOTS", style=discord.ButtonStyle.secondary, row=0, emoji="🛡️")
